@@ -16,7 +16,7 @@ namespace PhotoMaker
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new KJ());
+            Application.Run(new PhotoMakerForm());
         }
     }
 }
