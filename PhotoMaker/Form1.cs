@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PhotoMaker
 {
-    public partial class Form1 : Form
+    public partial class KJ : Form
     {
-        public Form1()
+        public KJ()
         {
             InitializeComponent();
         }
