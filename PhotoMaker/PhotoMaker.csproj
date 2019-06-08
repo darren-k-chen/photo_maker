@@ -95,5 +95,23 @@
   <ItemGroup>
     <None Include="Resources\bg3.jpeg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GitHub_Logo_White.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GitHub_Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GitHub_Logo_burned.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GitHub-Mark-120px-plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GitHub-Mark-32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Github_mark_24.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
