@@ -7,15 +7,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-// This code created by K.J. Chen ( 陳冠儒 )
-// Copyright © 2019 K.J. Chen | All Rights Reserved
+/*
+ * |==================================================|
+ * |====This code created by K.J. Chen ( 陳冠儒 )=====|
+ * |=Copyright © 2019 K.J. Chen | All Rights Reserved=|
+ * |==================================================|
+*/
 
 namespace PhotoMaker
 {
     class DragControl : Component
     {
         private Control handelControl;
-
         public Control SelectControl
         {
             get

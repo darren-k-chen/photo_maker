@@ -22,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -31,10 +32,20 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -55,10 +66,37 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="PanelControls\PainterPanelControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PanelControls\PainterPanelControl.Designer.cs">
+      <DependentUpon>PainterPanelControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanelControls\ProcessPanelControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PanelControls\ProcessPanelControl.Designer.cs">
+      <DependentUpon>ProcessPanelControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PanelControls\FilePanelControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PanelControls\FilePanelControl.Designer.cs">
+      <DependentUpon>FilePanelControl.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelControls\FilePanelControl.resx">
+      <DependentUpon>FilePanelControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelControls\PainterPanelControl.resx">
+      <DependentUpon>PainterPanelControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelControls\ProcessPanelControl.resx">
+      <DependentUpon>ProcessPanelControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -70,6 +108,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="app.manifest">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -81,7 +122,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\logo_tra.png" />
@@ -112,6 +155,57 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Github_mark_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_file_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_file_white_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open_file_white_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_file_white_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\negative_black_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\negative_white_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cut_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paste_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy_icon_46.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cut_icon_46.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paste_icon_46.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\palette_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\palette_icon_50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\palette_icon_30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pen_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pen_ico_30.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
