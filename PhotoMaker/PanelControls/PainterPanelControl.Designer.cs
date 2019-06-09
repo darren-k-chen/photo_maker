@@ -29,21 +29,230 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PainterPanelControl));
+            this.LineWidthTrackBar = new System.Windows.Forms.TrackBar();
+            this.LineWidthLabel = new System.Windows.Forms.Label();
+            this.DashStyleLabel = new System.Windows.Forms.Label();
+            this.FitButton = new System.Windows.Forms.Button();
+            this.ZoomOUT_Button = new System.Windows.Forms.Button();
+            this.ZoomIN_Button = new System.Windows.Forms.Button();
+            this.DashDotDotButton = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.DashDotButton = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.SolidButton = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.DashButton = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.DotButton = new Bunifu.Framework.UI.BunifuThinButton2();
             this.PenButton = new System.Windows.Forms.Button();
             this.PaletteButton = new System.Windows.Forms.Button();
             this.PasteButton = new System.Windows.Forms.Button();
             this.CopyButton = new System.Windows.Forms.Button();
             this.CutButton = new System.Windows.Forms.Button();
-            this.LineWidthTrackBar = new System.Windows.Forms.TrackBar();
-            this.LineWidthLabel = new System.Windows.Forms.Label();
-            this.DashStyleLabel = new System.Windows.Forms.Label();
-            this.DotButton = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.DashButton = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.SolidButton = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.DashDotButton = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.DashDotDotButton = new Bunifu.Framework.UI.BunifuThinButton2();
             ((System.ComponentModel.ISupportInitialize)(this.LineWidthTrackBar)).BeginInit();
             this.SuspendLayout();
+            // 
+            // LineWidthTrackBar
+            // 
+            this.LineWidthTrackBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(170)))), ((int)(((byte)(245)))));
+            this.LineWidthTrackBar.LargeChange = 1;
+            this.LineWidthTrackBar.Location = new System.Drawing.Point(3, 181);
+            this.LineWidthTrackBar.Maximum = 4;
+            this.LineWidthTrackBar.Name = "LineWidthTrackBar";
+            this.LineWidthTrackBar.Size = new System.Drawing.Size(151, 45);
+            this.LineWidthTrackBar.TabIndex = 1;
+            // 
+            // LineWidthLabel
+            // 
+            this.LineWidthLabel.AutoSize = true;
+            this.LineWidthLabel.BackColor = System.Drawing.Color.Transparent;
+            this.LineWidthLabel.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LineWidthLabel.ForeColor = System.Drawing.Color.White;
+            this.LineWidthLabel.Location = new System.Drawing.Point(3, 155);
+            this.LineWidthLabel.Name = "LineWidthLabel";
+            this.LineWidthLabel.Size = new System.Drawing.Size(94, 23);
+            this.LineWidthLabel.TabIndex = 6;
+            this.LineWidthLabel.Text = "Line Width";
+            // 
+            // DashStyleLabel
+            // 
+            this.DashStyleLabel.AutoSize = true;
+            this.DashStyleLabel.BackColor = System.Drawing.Color.Transparent;
+            this.DashStyleLabel.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DashStyleLabel.ForeColor = System.Drawing.Color.White;
+            this.DashStyleLabel.Location = new System.Drawing.Point(3, 229);
+            this.DashStyleLabel.Name = "DashStyleLabel";
+            this.DashStyleLabel.Size = new System.Drawing.Size(96, 23);
+            this.DashStyleLabel.TabIndex = 7;
+            this.DashStyleLabel.Text = "Dash Style";
+            // 
+            // FitButton
+            // 
+            this.FitButton.BackColor = System.Drawing.Color.Transparent;
+            this.FitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.FitButton.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FitButton.ForeColor = System.Drawing.Color.White;
+            this.FitButton.Image = global::PhotoMaker.Properties.Resources.fit_image_icon_30;
+            this.FitButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.FitButton.Location = new System.Drawing.Point(3, 2);
+            this.FitButton.Name = "FitButton";
+            this.FitButton.Size = new System.Drawing.Size(46, 46);
+            this.FitButton.TabIndex = 15;
+            this.FitButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.FitButton.UseVisualStyleBackColor = false;
+            this.FitButton.MouseEnter += new System.EventHandler(this.FitButton_MouseEnter);
+            this.FitButton.MouseLeave += new System.EventHandler(this.FitButton_MouseLeave);
+            // 
+            // ZoomOUT_Button
+            // 
+            this.ZoomOUT_Button.BackColor = System.Drawing.Color.Transparent;
+            this.ZoomOUT_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ZoomOUT_Button.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ZoomOUT_Button.ForeColor = System.Drawing.Color.White;
+            this.ZoomOUT_Button.Image = global::PhotoMaker.Properties.Resources.zoom_out_icon_30;
+            this.ZoomOUT_Button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ZoomOUT_Button.Location = new System.Drawing.Point(55, 2);
+            this.ZoomOUT_Button.Name = "ZoomOUT_Button";
+            this.ZoomOUT_Button.Size = new System.Drawing.Size(46, 46);
+            this.ZoomOUT_Button.TabIndex = 14;
+            this.ZoomOUT_Button.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.ZoomOUT_Button.UseVisualStyleBackColor = false;
+            // 
+            // ZoomIN_Button
+            // 
+            this.ZoomIN_Button.BackColor = System.Drawing.Color.Transparent;
+            this.ZoomIN_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ZoomIN_Button.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ZoomIN_Button.ForeColor = System.Drawing.Color.White;
+            this.ZoomIN_Button.Image = global::PhotoMaker.Properties.Resources.zoom_in_icon_30;
+            this.ZoomIN_Button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ZoomIN_Button.Location = new System.Drawing.Point(108, 2);
+            this.ZoomIN_Button.Name = "ZoomIN_Button";
+            this.ZoomIN_Button.Size = new System.Drawing.Size(46, 46);
+            this.ZoomIN_Button.TabIndex = 13;
+            this.ZoomIN_Button.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.ZoomIN_Button.UseVisualStyleBackColor = false;
+            // 
+            // DashDotDotButton
+            // 
+            this.DashDotDotButton.ActiveBorderThickness = 1;
+            this.DashDotDotButton.ActiveCornerRadius = 20;
+            this.DashDotDotButton.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(170)))), ((int)(((byte)(245)))));
+            this.DashDotDotButton.ActiveForecolor = System.Drawing.Color.Black;
+            this.DashDotDotButton.ActiveLineColor = System.Drawing.Color.Black;
+            this.DashDotDotButton.BackColor = System.Drawing.Color.Gray;
+            this.DashDotDotButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DashDotDotButton.BackgroundImage")));
+            this.DashDotDotButton.ButtonText = "-‧‧-‧‧-‧‧-‧‧-‧‧-‧‧-‧‧-‧‧-‧‧-‧‧-";
+            this.DashDotDotButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DashDotDotButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DashDotDotButton.ForeColor = System.Drawing.Color.White;
+            this.DashDotDotButton.IdleBorderThickness = 1;
+            this.DashDotDotButton.IdleCornerRadius = 20;
+            this.DashDotDotButton.IdleFillColor = System.Drawing.Color.Transparent;
+            this.DashDotDotButton.IdleForecolor = System.Drawing.Color.White;
+            this.DashDotDotButton.IdleLineColor = System.Drawing.Color.White;
+            this.DashDotDotButton.Location = new System.Drawing.Point(3, 409);
+            this.DashDotDotButton.Margin = new System.Windows.Forms.Padding(5);
+            this.DashDotDotButton.Name = "DashDotDotButton";
+            this.DashDotDotButton.Size = new System.Drawing.Size(149, 28);
+            this.DashDotDotButton.TabIndex = 12;
+            this.DashDotDotButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // DashDotButton
+            // 
+            this.DashDotButton.ActiveBorderThickness = 1;
+            this.DashDotButton.ActiveCornerRadius = 20;
+            this.DashDotButton.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(170)))), ((int)(((byte)(245)))));
+            this.DashDotButton.ActiveForecolor = System.Drawing.Color.Black;
+            this.DashDotButton.ActiveLineColor = System.Drawing.Color.Black;
+            this.DashDotButton.BackColor = System.Drawing.Color.Gray;
+            this.DashDotButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DashDotButton.BackgroundImage")));
+            this.DashDotButton.ButtonText = "-‧-‧-‧-‧-‧-‧-‧-‧-‧-‧-‧-‧-‧-‧-";
+            this.DashDotButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DashDotButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DashDotButton.ForeColor = System.Drawing.Color.White;
+            this.DashDotButton.IdleBorderThickness = 1;
+            this.DashDotButton.IdleCornerRadius = 20;
+            this.DashDotButton.IdleFillColor = System.Drawing.Color.Transparent;
+            this.DashDotButton.IdleForecolor = System.Drawing.Color.White;
+            this.DashDotButton.IdleLineColor = System.Drawing.Color.White;
+            this.DashDotButton.Location = new System.Drawing.Point(3, 371);
+            this.DashDotButton.Margin = new System.Windows.Forms.Padding(5);
+            this.DashDotButton.Name = "DashDotButton";
+            this.DashDotButton.Size = new System.Drawing.Size(149, 28);
+            this.DashDotButton.TabIndex = 11;
+            this.DashDotButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // SolidButton
+            // 
+            this.SolidButton.ActiveBorderThickness = 1;
+            this.SolidButton.ActiveCornerRadius = 20;
+            this.SolidButton.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(170)))), ((int)(((byte)(245)))));
+            this.SolidButton.ActiveForecolor = System.Drawing.Color.Black;
+            this.SolidButton.ActiveLineColor = System.Drawing.Color.Black;
+            this.SolidButton.BackColor = System.Drawing.Color.Gray;
+            this.SolidButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("SolidButton.BackgroundImage")));
+            this.SolidButton.ButtonText = "_______________________";
+            this.SolidButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SolidButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SolidButton.ForeColor = System.Drawing.Color.White;
+            this.SolidButton.IdleBorderThickness = 1;
+            this.SolidButton.IdleCornerRadius = 20;
+            this.SolidButton.IdleFillColor = System.Drawing.Color.Transparent;
+            this.SolidButton.IdleForecolor = System.Drawing.Color.White;
+            this.SolidButton.IdleLineColor = System.Drawing.Color.White;
+            this.SolidButton.Location = new System.Drawing.Point(3, 333);
+            this.SolidButton.Margin = new System.Windows.Forms.Padding(5);
+            this.SolidButton.Name = "SolidButton";
+            this.SolidButton.Size = new System.Drawing.Size(149, 28);
+            this.SolidButton.TabIndex = 10;
+            this.SolidButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // DashButton
+            // 
+            this.DashButton.ActiveBorderThickness = 1;
+            this.DashButton.ActiveCornerRadius = 20;
+            this.DashButton.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(170)))), ((int)(((byte)(245)))));
+            this.DashButton.ActiveForecolor = System.Drawing.Color.Black;
+            this.DashButton.ActiveLineColor = System.Drawing.Color.Black;
+            this.DashButton.BackColor = System.Drawing.Color.Gray;
+            this.DashButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DashButton.BackgroundImage")));
+            this.DashButton.ButtonText = "---------------------------";
+            this.DashButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DashButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DashButton.ForeColor = System.Drawing.Color.White;
+            this.DashButton.IdleBorderThickness = 1;
+            this.DashButton.IdleCornerRadius = 20;
+            this.DashButton.IdleFillColor = System.Drawing.Color.Transparent;
+            this.DashButton.IdleForecolor = System.Drawing.Color.White;
+            this.DashButton.IdleLineColor = System.Drawing.Color.White;
+            this.DashButton.Location = new System.Drawing.Point(3, 295);
+            this.DashButton.Margin = new System.Windows.Forms.Padding(5);
+            this.DashButton.Name = "DashButton";
+            this.DashButton.Size = new System.Drawing.Size(149, 28);
+            this.DashButton.TabIndex = 9;
+            this.DashButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // DotButton
+            // 
+            this.DotButton.ActiveBorderThickness = 1;
+            this.DotButton.ActiveCornerRadius = 20;
+            this.DotButton.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(170)))), ((int)(((byte)(245)))));
+            this.DotButton.ActiveForecolor = System.Drawing.Color.Black;
+            this.DotButton.ActiveLineColor = System.Drawing.Color.Black;
+            this.DotButton.BackColor = System.Drawing.Color.Gray;
+            this.DotButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DotButton.BackgroundImage")));
+            this.DotButton.ButtonText = "‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧";
+            this.DotButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DotButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DotButton.ForeColor = System.Drawing.Color.White;
+            this.DotButton.IdleBorderThickness = 1;
+            this.DotButton.IdleCornerRadius = 20;
+            this.DotButton.IdleFillColor = System.Drawing.Color.Transparent;
+            this.DotButton.IdleForecolor = System.Drawing.Color.White;
+            this.DotButton.IdleLineColor = System.Drawing.Color.White;
+            this.DotButton.Location = new System.Drawing.Point(3, 257);
+            this.DotButton.Margin = new System.Windows.Forms.Padding(5);
+            this.DotButton.Name = "DotButton";
+            this.DotButton.Size = new System.Drawing.Size(149, 28);
+            this.DotButton.TabIndex = 8;
+            this.DotButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // PenButton
             // 
@@ -126,169 +335,13 @@
             this.CutButton.MouseEnter += new System.EventHandler(this.CutButton_MouseEnter);
             this.CutButton.MouseLeave += new System.EventHandler(this.CutButton_MouseLeave);
             // 
-            // LineWidthTrackBar
-            // 
-            this.LineWidthTrackBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(170)))), ((int)(((byte)(245)))));
-            this.LineWidthTrackBar.LargeChange = 1;
-            this.LineWidthTrackBar.Location = new System.Drawing.Point(3, 181);
-            this.LineWidthTrackBar.Maximum = 4;
-            this.LineWidthTrackBar.Name = "LineWidthTrackBar";
-            this.LineWidthTrackBar.Size = new System.Drawing.Size(151, 45);
-            this.LineWidthTrackBar.TabIndex = 1;
-            // 
-            // LineWidthLabel
-            // 
-            this.LineWidthLabel.AutoSize = true;
-            this.LineWidthLabel.BackColor = System.Drawing.Color.Transparent;
-            this.LineWidthLabel.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LineWidthLabel.ForeColor = System.Drawing.Color.White;
-            this.LineWidthLabel.Location = new System.Drawing.Point(3, 155);
-            this.LineWidthLabel.Name = "LineWidthLabel";
-            this.LineWidthLabel.Size = new System.Drawing.Size(94, 23);
-            this.LineWidthLabel.TabIndex = 6;
-            this.LineWidthLabel.Text = "Line Width";
-            // 
-            // DashStyleLabel
-            // 
-            this.DashStyleLabel.AutoSize = true;
-            this.DashStyleLabel.BackColor = System.Drawing.Color.Transparent;
-            this.DashStyleLabel.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DashStyleLabel.ForeColor = System.Drawing.Color.White;
-            this.DashStyleLabel.Location = new System.Drawing.Point(3, 229);
-            this.DashStyleLabel.Name = "DashStyleLabel";
-            this.DashStyleLabel.Size = new System.Drawing.Size(96, 23);
-            this.DashStyleLabel.TabIndex = 7;
-            this.DashStyleLabel.Text = "Dash Style";
-            // 
-            // DotButton
-            // 
-            this.DotButton.ActiveBorderThickness = 1;
-            this.DotButton.ActiveCornerRadius = 20;
-            this.DotButton.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(170)))), ((int)(((byte)(245)))));
-            this.DotButton.ActiveForecolor = System.Drawing.Color.Black;
-            this.DotButton.ActiveLineColor = System.Drawing.Color.Black;
-            this.DotButton.BackColor = System.Drawing.Color.Transparent;
-            this.DotButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DotButton.BackgroundImage")));
-            this.DotButton.ButtonText = "‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧";
-            this.DotButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.DotButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DotButton.ForeColor = System.Drawing.Color.White;
-            this.DotButton.IdleBorderThickness = 1;
-            this.DotButton.IdleCornerRadius = 20;
-            this.DotButton.IdleFillColor = System.Drawing.Color.Transparent;
-            this.DotButton.IdleForecolor = System.Drawing.Color.White;
-            this.DotButton.IdleLineColor = System.Drawing.Color.White;
-            this.DotButton.Location = new System.Drawing.Point(3, 257);
-            this.DotButton.Margin = new System.Windows.Forms.Padding(5);
-            this.DotButton.Name = "DotButton";
-            this.DotButton.Size = new System.Drawing.Size(149, 28);
-            this.DotButton.TabIndex = 8;
-            this.DotButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // DashButton
-            // 
-            this.DashButton.ActiveBorderThickness = 1;
-            this.DashButton.ActiveCornerRadius = 20;
-            this.DashButton.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(170)))), ((int)(((byte)(245)))));
-            this.DashButton.ActiveForecolor = System.Drawing.Color.Black;
-            this.DashButton.ActiveLineColor = System.Drawing.Color.Black;
-            this.DashButton.BackColor = System.Drawing.Color.Transparent;
-            this.DashButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DashButton.BackgroundImage")));
-            this.DashButton.ButtonText = "---------------------------";
-            this.DashButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.DashButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DashButton.ForeColor = System.Drawing.Color.White;
-            this.DashButton.IdleBorderThickness = 1;
-            this.DashButton.IdleCornerRadius = 20;
-            this.DashButton.IdleFillColor = System.Drawing.Color.Transparent;
-            this.DashButton.IdleForecolor = System.Drawing.Color.White;
-            this.DashButton.IdleLineColor = System.Drawing.Color.White;
-            this.DashButton.Location = new System.Drawing.Point(3, 295);
-            this.DashButton.Margin = new System.Windows.Forms.Padding(5);
-            this.DashButton.Name = "DashButton";
-            this.DashButton.Size = new System.Drawing.Size(149, 28);
-            this.DashButton.TabIndex = 9;
-            this.DashButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // SolidButton
-            // 
-            this.SolidButton.ActiveBorderThickness = 1;
-            this.SolidButton.ActiveCornerRadius = 20;
-            this.SolidButton.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(170)))), ((int)(((byte)(245)))));
-            this.SolidButton.ActiveForecolor = System.Drawing.Color.Black;
-            this.SolidButton.ActiveLineColor = System.Drawing.Color.Black;
-            this.SolidButton.BackColor = System.Drawing.Color.Transparent;
-            this.SolidButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("SolidButton.BackgroundImage")));
-            this.SolidButton.ButtonText = "_______________________";
-            this.SolidButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.SolidButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SolidButton.ForeColor = System.Drawing.Color.White;
-            this.SolidButton.IdleBorderThickness = 1;
-            this.SolidButton.IdleCornerRadius = 20;
-            this.SolidButton.IdleFillColor = System.Drawing.Color.Transparent;
-            this.SolidButton.IdleForecolor = System.Drawing.Color.White;
-            this.SolidButton.IdleLineColor = System.Drawing.Color.White;
-            this.SolidButton.Location = new System.Drawing.Point(3, 333);
-            this.SolidButton.Margin = new System.Windows.Forms.Padding(5);
-            this.SolidButton.Name = "SolidButton";
-            this.SolidButton.Size = new System.Drawing.Size(149, 28);
-            this.SolidButton.TabIndex = 10;
-            this.SolidButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // DashDotButton
-            // 
-            this.DashDotButton.ActiveBorderThickness = 1;
-            this.DashDotButton.ActiveCornerRadius = 20;
-            this.DashDotButton.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(170)))), ((int)(((byte)(245)))));
-            this.DashDotButton.ActiveForecolor = System.Drawing.Color.Black;
-            this.DashDotButton.ActiveLineColor = System.Drawing.Color.Black;
-            this.DashDotButton.BackColor = System.Drawing.Color.Transparent;
-            this.DashDotButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DashDotButton.BackgroundImage")));
-            this.DashDotButton.ButtonText = "-‧-‧-‧-‧-‧-‧-‧-‧-‧-‧-‧-‧-‧-‧-";
-            this.DashDotButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.DashDotButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DashDotButton.ForeColor = System.Drawing.Color.White;
-            this.DashDotButton.IdleBorderThickness = 1;
-            this.DashDotButton.IdleCornerRadius = 20;
-            this.DashDotButton.IdleFillColor = System.Drawing.Color.Transparent;
-            this.DashDotButton.IdleForecolor = System.Drawing.Color.White;
-            this.DashDotButton.IdleLineColor = System.Drawing.Color.White;
-            this.DashDotButton.Location = new System.Drawing.Point(3, 371);
-            this.DashDotButton.Margin = new System.Windows.Forms.Padding(5);
-            this.DashDotButton.Name = "DashDotButton";
-            this.DashDotButton.Size = new System.Drawing.Size(149, 28);
-            this.DashDotButton.TabIndex = 11;
-            this.DashDotButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // DashDotDotButton
-            // 
-            this.DashDotDotButton.ActiveBorderThickness = 1;
-            this.DashDotDotButton.ActiveCornerRadius = 20;
-            this.DashDotDotButton.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(170)))), ((int)(((byte)(245)))));
-            this.DashDotDotButton.ActiveForecolor = System.Drawing.Color.Black;
-            this.DashDotDotButton.ActiveLineColor = System.Drawing.Color.Black;
-            this.DashDotDotButton.BackColor = System.Drawing.Color.Transparent;
-            this.DashDotDotButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DashDotDotButton.BackgroundImage")));
-            this.DashDotDotButton.ButtonText = "-‧‧-‧‧-‧‧-‧‧-‧‧-‧‧-‧‧-‧‧-‧‧-‧‧-";
-            this.DashDotDotButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.DashDotDotButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DashDotDotButton.ForeColor = System.Drawing.Color.White;
-            this.DashDotDotButton.IdleBorderThickness = 1;
-            this.DashDotDotButton.IdleCornerRadius = 20;
-            this.DashDotDotButton.IdleFillColor = System.Drawing.Color.Transparent;
-            this.DashDotDotButton.IdleForecolor = System.Drawing.Color.White;
-            this.DashDotDotButton.IdleLineColor = System.Drawing.Color.White;
-            this.DashDotDotButton.Location = new System.Drawing.Point(3, 409);
-            this.DashDotDotButton.Margin = new System.Windows.Forms.Padding(5);
-            this.DashDotDotButton.Name = "DashDotDotButton";
-            this.DashDotDotButton.Size = new System.Drawing.Size(149, 28);
-            this.DashDotDotButton.TabIndex = 12;
-            this.DashDotDotButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // PainterPanelControl
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.Gray;
+            this.Controls.Add(this.FitButton);
+            this.Controls.Add(this.ZoomOUT_Button);
+            this.Controls.Add(this.ZoomIN_Button);
             this.Controls.Add(this.DashDotDotButton);
             this.Controls.Add(this.DashDotButton);
             this.Controls.Add(this.SolidButton);
@@ -326,5 +379,8 @@
         private Bunifu.Framework.UI.BunifuThinButton2 SolidButton;
         private Bunifu.Framework.UI.BunifuThinButton2 DashDotButton;
         private Bunifu.Framework.UI.BunifuThinButton2 DashDotDotButton;
+        private System.Windows.Forms.Button ZoomIN_Button;
+        private System.Windows.Forms.Button ZoomOUT_Button;
+        private System.Windows.Forms.Button FitButton;
     }
 }

@@ -207,5 +207,23 @@
   <ItemGroup>
     <None Include="Resources\pen_ico_30.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fit_image_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fit_image_icon_30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoom-in_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoom-in_icon_30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoom-out_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoom-out_icon_30.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

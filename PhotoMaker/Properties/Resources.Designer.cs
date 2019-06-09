@@ -143,6 +143,26 @@ namespace PhotoMaker.Properties {
         /// <summary>
         ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
         /// </summary>
+        internal static System.Drawing.Bitmap fit_image_icon {
+            get {
+                object obj = ResourceManager.GetObject("fit_image_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap fit_image_icon_30 {
+            get {
+                object obj = ResourceManager.GetObject("fit_image_icon_30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
         internal static System.Drawing.Bitmap GitHub_Logo {
             get {
                 object obj = ResourceManager.GetObject("GitHub_Logo", resourceCulture);
@@ -326,6 +346,46 @@ namespace PhotoMaker.Properties {
         internal static System.Drawing.Bitmap save_file_white_icon {
             get {
                 object obj = ResourceManager.GetObject("save_file_white_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap zoom_in_icon {
+            get {
+                object obj = ResourceManager.GetObject("zoom-in_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap zoom_in_icon_30 {
+            get {
+                object obj = ResourceManager.GetObject("zoom-in_icon_30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap zoom_out_icon {
+            get {
+                object obj = ResourceManager.GetObject("zoom-out_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap zoom_out_icon_30 {
+            get {
+                object obj = ResourceManager.GetObject("zoom-out_icon_30", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

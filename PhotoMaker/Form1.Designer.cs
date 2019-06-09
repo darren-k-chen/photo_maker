@@ -31,9 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PhotoMakerForm));
             this.panel2 = new System.Windows.Forms.Panel();
-            this.painterPanelControl1 = new PhotoMaker.PanelControls.PainterPanelControl();
-            this.processPanelControl1 = new PhotoMaker.PanelControls.ProcessPanelControl();
-            this.filePanelControl2 = new PhotoMaker.UserControls.FilePanelControl();
+            this.painterPanelControl2 = new PhotoMaker.PanelControls.PainterPanelControl();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.GithubButton = new System.Windows.Forms.Button();
@@ -47,10 +45,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.dragControl1 = new PhotoMaker.DragControl();
-            this.dragControl2 = new PhotoMaker.DragControl();
-            this.dragControl3 = new PhotoMaker.DragControl();
-            this.dragControl4 = new PhotoMaker.DragControl();
+            this.processPanelControl2 = new PhotoMaker.PanelControls.ProcessPanelControl();
+            this.filePanelControl1 = new PhotoMaker.UserControls.FilePanelControl();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -62,43 +58,22 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(211)))));
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel2.Controls.Add(this.painterPanelControl1);
-            this.panel2.Controls.Add(this.processPanelControl1);
-            this.panel2.Controls.Add(this.filePanelControl2);
+            this.panel2.Controls.Add(this.filePanelControl1);
+            this.panel2.Controls.Add(this.processPanelControl2);
+            this.panel2.Controls.Add(this.painterPanelControl2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 62);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(157, 538);
             this.panel2.TabIndex = 1;
             // 
-            // painterPanelControl1
+            // painterPanelControl2
             // 
-            this.painterPanelControl1.BackColor = System.Drawing.Color.Gray;
-            this.painterPanelControl1.Location = new System.Drawing.Point(0, 0);
-            this.painterPanelControl1.Margin = new System.Windows.Forms.Padding(5);
-            this.painterPanelControl1.Name = "painterPanelControl1";
-            this.painterPanelControl1.Size = new System.Drawing.Size(157, 538);
-            this.painterPanelControl1.TabIndex = 3;
-            this.painterPanelControl1.Visible = false;
-            // 
-            // processPanelControl1
-            // 
-            this.processPanelControl1.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.processPanelControl1.Location = new System.Drawing.Point(0, 0);
-            this.processPanelControl1.Name = "processPanelControl1";
-            this.processPanelControl1.Size = new System.Drawing.Size(157, 538);
-            this.processPanelControl1.TabIndex = 2;
-            this.processPanelControl1.Visible = false;
-            this.processPanelControl1.Load += new System.EventHandler(this.ProcessPanelControl1_Load);
-            // 
-            // filePanelControl2
-            // 
-            this.filePanelControl2.BackColor = System.Drawing.Color.Transparent;
-            this.filePanelControl2.Location = new System.Drawing.Point(0, 3);
-            this.filePanelControl2.Name = "filePanelControl2";
-            this.filePanelControl2.Size = new System.Drawing.Size(157, 538);
-            this.filePanelControl2.TabIndex = 1;
-            this.filePanelControl2.Visible = false;
+            this.painterPanelControl2.BackColor = System.Drawing.Color.Gray;
+            this.painterPanelControl2.Location = new System.Drawing.Point(0, 0);
+            this.painterPanelControl2.Name = "painterPanelControl2";
+            this.painterPanelControl2.Size = new System.Drawing.Size(157, 538);
+            this.painterPanelControl2.TabIndex = 0;
             // 
             // panel1
             // 
@@ -283,21 +258,21 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
-            // dragControl1
+            // processPanelControl2
             // 
-            this.dragControl1.SelectControl = this.panel1;
+            this.processPanelControl2.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.processPanelControl2.Location = new System.Drawing.Point(0, 0);
+            this.processPanelControl2.Name = "processPanelControl2";
+            this.processPanelControl2.Size = new System.Drawing.Size(157, 538);
+            this.processPanelControl2.TabIndex = 1;
             // 
-            // dragControl2
+            // filePanelControl1
             // 
-            this.dragControl2.SelectControl = this.label1;
-            // 
-            // dragControl3
-            // 
-            this.dragControl3.SelectControl = this.label2;
-            // 
-            // dragControl4
-            // 
-            this.dragControl4.SelectControl = this.panel4;
+            this.filePanelControl1.BackColor = System.Drawing.Color.Transparent;
+            this.filePanelControl1.Location = new System.Drawing.Point(0, 3);
+            this.filePanelControl1.Name = "filePanelControl1";
+            this.filePanelControl1.Size = new System.Drawing.Size(157, 538);
+            this.filePanelControl1.TabIndex = 2;
             // 
             // PhotoMakerForm
             // 
@@ -349,6 +324,9 @@
         public System.Windows.Forms.PictureBox pictureBox1;
         private PanelControls.PainterPanelControl painterPanelControl1;
         private System.Windows.Forms.Button CloseButton;
+        private PanelControls.PainterPanelControl painterPanelControl2;
+        private UserControls.FilePanelControl filePanelControl1;
+        private PanelControls.ProcessPanelControl processPanelControl2;
     }
 }
 

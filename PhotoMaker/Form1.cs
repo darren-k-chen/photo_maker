@@ -39,13 +39,13 @@ namespace PhotoMaker
         public PhotoMakerForm()
         {
             InitializeComponent();
-            processPanelControl1.BackColor = Color.Transparent;
-            painterPanelControl1.BackColor = Color.Transparent;
-            filePanelControl2.BackColor = Color.Transparent;
+            processPanelControl2.BackColor = Color.Transparent;
+            painterPanelControl2.BackColor = Color.Transparent;
+            filePanelControl1.BackColor = Color.Transparent;
             //Install_OTF();
             //GithubButton.Image = imageList1.Images[0];
             //GithubButton.Image = imageList1.Images[1];
-            filePanelControl2.Visible = true;
+            filePanelControl1.Visible = true;
         }
 
         private void PhotoMakerForm_Load(object sender, EventArgs e)
@@ -53,17 +53,17 @@ namespace PhotoMaker
 
         }
 
-        private void Install_OTF()
-        {
-            string otf_name = "BrushScriptStd_0.otf";
-            string src_path = @"D:\kjchen\Documents\學習資料\學習課程目錄\C語言\PhotoMaker\PhotoMaker\bin\Debug\Resources";
-            string trg_path = @"C:\Windows\Fonts";
+        //private void Install_OTF()
+        //{
+        //    string otf_name = "BrushScriptStd_0.otf";
+        //    string src_path = @"D:\kjchen\Documents\學習資料\學習課程目錄\C語言\PhotoMaker\PhotoMaker\bin\Debug\Resources";
+        //    string trg_path = @"C:\Windows\Fonts";
 
-            string src_file = System.IO.Path.Combine(src_path, otf_name);
-            string dst_file = System.IO.Path.Combine(trg_path, otf_name);
+        //    string src_file = System.IO.Path.Combine(src_path, otf_name);
+        //    string dst_file = System.IO.Path.Combine(trg_path, otf_name);
 
-            System.IO.File.Copy(src_file, dst_file, true);
-        }
+        //    System.IO.File.Copy(src_file, dst_file, true);
+        //}
 
         public void CloseButton_Click(object sender, EventArgs e)
         {
@@ -83,7 +83,7 @@ namespace PhotoMaker
         private void FileButton_Click(object sender, EventArgs e)
         {
             CloseAllPanelControl();
-            filePanelControl2.Visible = true;
+            filePanelControl1.Visible = true;
         }
 
         private void FileButton_MouseEnter(object sender, EventArgs e)
@@ -172,20 +172,20 @@ namespace PhotoMaker
         private void ProcessButton_Click(object sender, EventArgs e)
         {
             CloseAllPanelControl();
-            processPanelControl1.Visible = true;
+            processPanelControl2.Visible = true;
         }
 
         private void CloseAllPanelControl()
         {
-            filePanelControl2.Visible = false;
-            processPanelControl1.Visible = false;
-            painterPanelControl1.Visible = false;
+            filePanelControl1.Visible = false;
+            processPanelControl2.Visible = false;
+            painterPanelControl2.Visible = false;
         }
 
         private void PainterButton_Click(object sender, EventArgs e)
         {
             CloseAllPanelControl();
-            painterPanelControl1.Visible = true;
+            painterPanelControl2.Visible = true;
         }
     }
 }

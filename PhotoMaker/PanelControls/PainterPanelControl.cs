@@ -37,6 +37,9 @@ namespace PhotoMaker.PanelControls
             CopyButton.BackgroundImage = NegativeConvert(CopyButton.BackgroundImage);
             CutButton.BackgroundImage = NegativeConvert(CutButton.BackgroundImage);
             PaletteButton.Image = NegativeConvert(PaletteButton.Image);
+            FitButton.Image = NegativeConvert(PaletteButton.Image);
+            ZoomIN_Button.Image = NegativeConvert(PaletteButton.Image);
+            ZoomOUT_Button.Image = NegativeConvert(PaletteButton.Image);
         }
 
         private void CutButton_Click(object sender, EventArgs e)
@@ -109,6 +112,18 @@ namespace PhotoMaker.PanelControls
         private void PainterPanelControl_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void FitButton_MouseEnter(object sender, EventArgs e)
+        {
+            FitButton.Image = NegativeConvert(FitButton.Image);
+            FitButton.BackColor = Color.FromArgb(25, 118, 211);
+        }
+
+        private void FitButton_MouseLeave(object sender, EventArgs e)
+        {
+            FitButton.Image = NegativeConvert(FitButton.Image);
+            FitButton.BackColor = Color.Transparent;
         }
     }
 }
