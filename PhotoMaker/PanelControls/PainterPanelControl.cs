@@ -125,5 +125,29 @@ namespace PhotoMaker.PanelControls
             FitButton.Image = NegativeConvert(FitButton.Image);
             FitButton.BackColor = Color.Transparent;
         }
+
+        private void ZoomOUT_Button_MouseEnter(object sender, EventArgs e)
+        {
+            ZoomOUT_Button.Image = NegativeConvert(ZoomOUT_Button.Image);
+            ZoomOUT_Button.BackColor = Color.FromArgb(25, 118, 211);
+        }
+
+        private void ZoomOUT_Button_MouseLeave(object sender, EventArgs e)
+        {
+            ZoomOUT_Button.Image = NegativeConvert(ZoomOUT_Button.Image);
+            ZoomOUT_Button.BackColor = Color.Transparent;
+        }
+
+        private void ZoomIN_Button_MouseEnter(object sender, EventArgs e)
+        {
+            ZoomIN_Button.Image = NegativeConvert(ZoomIN_Button.Image);
+            ZoomIN_Button.BackColor = Color.FromArgb(25, 118, 211);
+        }
+
+        private void ZoomIN_Button_MouseLeave(object sender, EventArgs e)
+        {
+            ZoomIN_Button.Image = NegativeConvert(ZoomIN_Button.Image);
+            ZoomIN_Button.BackColor = Color.Transparent;
+        }
     }
 }

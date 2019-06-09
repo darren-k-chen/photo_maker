@@ -113,6 +113,8 @@
             this.ZoomOUT_Button.TabIndex = 14;
             this.ZoomOUT_Button.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.ZoomOUT_Button.UseVisualStyleBackColor = false;
+            this.ZoomOUT_Button.MouseEnter += new System.EventHandler(this.ZoomOUT_Button_MouseEnter);
+            this.ZoomOUT_Button.MouseLeave += new System.EventHandler(this.ZoomOUT_Button_MouseLeave);
             // 
             // ZoomIN_Button
             // 
@@ -128,6 +130,8 @@
             this.ZoomIN_Button.TabIndex = 13;
             this.ZoomIN_Button.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.ZoomIN_Button.UseVisualStyleBackColor = false;
+            this.ZoomIN_Button.MouseEnter += new System.EventHandler(this.ZoomIN_Button_MouseEnter);
+            this.ZoomIN_Button.MouseLeave += new System.EventHandler(this.ZoomIN_Button_MouseLeave);
             // 
             // DashDotDotButton
             // 
