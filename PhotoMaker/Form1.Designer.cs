@@ -31,6 +31,8 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PhotoMakerForm));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.filePanelControl1 = new PhotoMaker.UserControls.FilePanelControl();
+            this.processPanelControl2 = new PhotoMaker.PanelControls.ProcessPanelControl();
             this.painterPanelControl2 = new PhotoMaker.PanelControls.PainterPanelControl();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -45,8 +47,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.processPanelControl2 = new PhotoMaker.PanelControls.ProcessPanelControl();
-            this.filePanelControl1 = new PhotoMaker.UserControls.FilePanelControl();
+            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.bunifuDragControl2 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.bunifuDragControl3 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.bunifuDragControl4 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.bunifuDragControl5 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -66,6 +71,22 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(157, 538);
             this.panel2.TabIndex = 1;
+            // 
+            // filePanelControl1
+            // 
+            this.filePanelControl1.BackColor = System.Drawing.Color.Transparent;
+            this.filePanelControl1.Location = new System.Drawing.Point(0, 3);
+            this.filePanelControl1.Name = "filePanelControl1";
+            this.filePanelControl1.Size = new System.Drawing.Size(157, 538);
+            this.filePanelControl1.TabIndex = 2;
+            // 
+            // processPanelControl2
+            // 
+            this.processPanelControl2.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.processPanelControl2.Location = new System.Drawing.Point(0, 0);
+            this.processPanelControl2.Name = "processPanelControl2";
+            this.processPanelControl2.Size = new System.Drawing.Size(157, 538);
+            this.processPanelControl2.TabIndex = 1;
             // 
             // painterPanelControl2
             // 
@@ -129,7 +150,7 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(119, 6);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(203, 23);
+            this.label2.Size = new System.Drawing.Size(256, 29);
             this.label2.TabIndex = 7;
             this.label2.Text = " © | All Rights Reserved";
             this.label2.Click += new System.EventHandler(this.label2_Click_1);
@@ -237,7 +258,7 @@
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(5, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(149, 35);
+            this.label1.Size = new System.Drawing.Size(184, 41);
             this.label1.TabIndex = 0;
             this.label1.Text = "Photomaker";
             // 
@@ -258,21 +279,40 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
-            // processPanelControl2
+            // bunifuDragControl1
             // 
-            this.processPanelControl2.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.processPanelControl2.Location = new System.Drawing.Point(0, 0);
-            this.processPanelControl2.Name = "processPanelControl2";
-            this.processPanelControl2.Size = new System.Drawing.Size(157, 538);
-            this.processPanelControl2.TabIndex = 1;
+            this.bunifuDragControl1.Fixed = true;
+            this.bunifuDragControl1.Horizontal = true;
+            this.bunifuDragControl1.TargetControl = this.panel1;
+            this.bunifuDragControl1.Vertical = true;
             // 
-            // filePanelControl1
+            // bunifuDragControl2
             // 
-            this.filePanelControl1.BackColor = System.Drawing.Color.Transparent;
-            this.filePanelControl1.Location = new System.Drawing.Point(0, 3);
-            this.filePanelControl1.Name = "filePanelControl1";
-            this.filePanelControl1.Size = new System.Drawing.Size(157, 538);
-            this.filePanelControl1.TabIndex = 2;
+            this.bunifuDragControl2.Fixed = true;
+            this.bunifuDragControl2.Horizontal = true;
+            this.bunifuDragControl2.TargetControl = this.panel3;
+            this.bunifuDragControl2.Vertical = true;
+            // 
+            // bunifuDragControl3
+            // 
+            this.bunifuDragControl3.Fixed = true;
+            this.bunifuDragControl3.Horizontal = true;
+            this.bunifuDragControl3.TargetControl = this.panel4;
+            this.bunifuDragControl3.Vertical = true;
+            // 
+            // bunifuDragControl4
+            // 
+            this.bunifuDragControl4.Fixed = true;
+            this.bunifuDragControl4.Horizontal = true;
+            this.bunifuDragControl4.TargetControl = this.label2;
+            this.bunifuDragControl4.Vertical = true;
+            // 
+            // bunifuDragControl5
+            // 
+            this.bunifuDragControl5.Fixed = true;
+            this.bunifuDragControl5.Horizontal = true;
+            this.bunifuDragControl5.TargetControl = this.label1;
+            this.bunifuDragControl5.Vertical = true;
             // 
             // PhotoMakerForm
             // 
@@ -327,6 +367,11 @@
         private PanelControls.PainterPanelControl painterPanelControl2;
         private UserControls.FilePanelControl filePanelControl1;
         private PanelControls.ProcessPanelControl processPanelControl2;
+        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
+        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl2;
+        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl3;
+        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl4;
+        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl5;
     }
 }
 

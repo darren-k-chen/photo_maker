@@ -47,7 +47,10 @@ namespace PhotoMaker
             //GithubButton.Image = imageList1.Images[1];
             filePanelControl1.Visible = true;
         }
+        public void open_file()
+        {
 
+        }
         private void PhotoMakerForm_Load(object sender, EventArgs e)
         {
 
