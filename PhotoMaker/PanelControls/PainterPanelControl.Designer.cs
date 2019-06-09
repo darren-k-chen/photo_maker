@@ -140,7 +140,7 @@
             this.DashDotDotButton.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(170)))), ((int)(((byte)(245)))));
             this.DashDotDotButton.ActiveForecolor = System.Drawing.Color.Black;
             this.DashDotDotButton.ActiveLineColor = System.Drawing.Color.Black;
-            this.DashDotDotButton.BackColor = System.Drawing.Color.Gray;
+            this.DashDotDotButton.BackColor = System.Drawing.Color.Transparent;
             this.DashDotDotButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DashDotDotButton.BackgroundImage")));
             this.DashDotDotButton.ButtonText = "-‧‧-‧‧-‧‧-‧‧-‧‧-‧‧-‧‧-‧‧-‧‧-‧‧-";
             this.DashDotDotButton.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -165,7 +165,7 @@
             this.DashDotButton.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(170)))), ((int)(((byte)(245)))));
             this.DashDotButton.ActiveForecolor = System.Drawing.Color.Black;
             this.DashDotButton.ActiveLineColor = System.Drawing.Color.Black;
-            this.DashDotButton.BackColor = System.Drawing.Color.Gray;
+            this.DashDotButton.BackColor = System.Drawing.Color.Transparent;
             this.DashDotButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DashDotButton.BackgroundImage")));
             this.DashDotButton.ButtonText = "-‧-‧-‧-‧-‧-‧-‧-‧-‧-‧-‧-‧-‧-‧-";
             this.DashDotButton.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -190,7 +190,7 @@
             this.SolidButton.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(170)))), ((int)(((byte)(245)))));
             this.SolidButton.ActiveForecolor = System.Drawing.Color.Black;
             this.SolidButton.ActiveLineColor = System.Drawing.Color.Black;
-            this.SolidButton.BackColor = System.Drawing.Color.Gray;
+            this.SolidButton.BackColor = System.Drawing.Color.Transparent;
             this.SolidButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("SolidButton.BackgroundImage")));
             this.SolidButton.ButtonText = "_______________________";
             this.SolidButton.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -215,7 +215,7 @@
             this.DashButton.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(170)))), ((int)(((byte)(245)))));
             this.DashButton.ActiveForecolor = System.Drawing.Color.Black;
             this.DashButton.ActiveLineColor = System.Drawing.Color.Black;
-            this.DashButton.BackColor = System.Drawing.Color.Gray;
+            this.DashButton.BackColor = System.Drawing.Color.Transparent;
             this.DashButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DashButton.BackgroundImage")));
             this.DashButton.ButtonText = "---------------------------";
             this.DashButton.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -240,7 +240,7 @@
             this.DotButton.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(170)))), ((int)(((byte)(245)))));
             this.DotButton.ActiveForecolor = System.Drawing.Color.Black;
             this.DotButton.ActiveLineColor = System.Drawing.Color.Black;
-            this.DotButton.BackColor = System.Drawing.Color.Gray;
+            this.DotButton.BackColor = System.Drawing.Color.Transparent;
             this.DotButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DotButton.BackgroundImage")));
             this.DotButton.ButtonText = "‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧‧";
             this.DotButton.Cursor = System.Windows.Forms.Cursors.Hand;

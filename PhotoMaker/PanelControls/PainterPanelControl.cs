@@ -37,9 +37,9 @@ namespace PhotoMaker.PanelControls
             CopyButton.BackgroundImage = NegativeConvert(CopyButton.BackgroundImage);
             CutButton.BackgroundImage = NegativeConvert(CutButton.BackgroundImage);
             PaletteButton.Image = NegativeConvert(PaletteButton.Image);
-            FitButton.Image = NegativeConvert(PaletteButton.Image);
-            ZoomIN_Button.Image = NegativeConvert(PaletteButton.Image);
-            ZoomOUT_Button.Image = NegativeConvert(PaletteButton.Image);
+            FitButton.Image = NegativeConvert(FitButton.Image);
+            ZoomIN_Button.Image = NegativeConvert(ZoomIN_Button.Image);
+            ZoomOUT_Button.Image = NegativeConvert(ZoomOUT_Button.Image);
         }
 
         private void CutButton_Click(object sender, EventArgs e)
