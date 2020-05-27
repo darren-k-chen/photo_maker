@@ -124,8 +124,8 @@
   <data name="pen_ico_30" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pen_ico_30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="save_file_white_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\save_file_white_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="GitHub_Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GitHub_Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bg2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bg2.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -133,8 +133,14 @@
   <data name="paste_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\paste_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="zoom-in_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\zoom-in_icon2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="negative_white_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\negative_white_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fit_image_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fit_image_icon2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="GitHub-Mark-32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GitHub-Mark-32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -145,11 +151,17 @@
   <data name="palette_icon_30" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\palette_icon_30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="save_file_white_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\save_file_white_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="open_file_white_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\open_file_white_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="save_file_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\save_file_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fit_image_icon_30" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fit_image_icon_302.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="GitHub-Mark-120px-plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GitHub-Mark-120px-plus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,8 +181,8 @@
   <data name="copy_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\copy_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="GitHub_Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GitHub_Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="zoom-in_icon_30" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\zoom-in_icon_302.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pen_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pen_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -184,11 +196,17 @@
   <data name="palette_icon_50" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\palette_icon_50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="zoom-out_icon_30" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\zoom-out_icon_302.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Github_mark_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Github_mark_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="copy_icon_46" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\copy_icon_46.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zoom-out_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\zoom-out_icon2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bg.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -199,22 +217,13 @@
   <data name="GitHub_Logo_burned" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GitHub_Logo_burned.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fit_image_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fit_image_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="circle_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\circle_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fit_image_icon_30" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fit_image_icon_30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="line_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\line_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="zoom-in_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\zoom-in_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="zoom-in_icon_30" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\zoom-in_icon_30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="zoom-out_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\zoom-out_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="zoom-out_icon_30" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\zoom-out_icon_30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="rectangle_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rectangle_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -57,7 +57,45 @@ namespace PhotoMaker.PanelControls
 
         private void NegativeButton_Click(object sender, EventArgs e)
         {
-            PhotoMakerForm obj = new PhotoMakerForm();
+            var f = this.TopLevelControl as PhotoMakerForm;
+            f.IntegrationProcessing();
+        }
+
+        private void BinarizationButton_Click(object sender, EventArgs e)
+        {
+            var f = this.TopLevelControl as PhotoMakerForm;
+            f.IntegrationProcessing("BINARY");
+            //f.PictureNegativeConvert();
+        }
+
+        private void MeanGrayScaleButton_Click(object sender, EventArgs e)
+        {
+            var f = this.TopLevelControl as PhotoMakerForm;
+            f.IntegrationProcessing("GRAY", 'M');
+        }
+
+        private void LightGrayScaleButton_Click(object sender, EventArgs e)
+        {
+            var f = this.TopLevelControl as PhotoMakerForm;
+            f.IntegrationProcessing("GRAY");
+        }
+
+        private void FilterRedButton_Click(object sender, EventArgs e)
+        {
+            var f = this.TopLevelControl as PhotoMakerForm;
+            f.IntegrationProcessing("RGB", 'R');
+        }
+
+        private void FilterGreenButton_Click(object sender, EventArgs e)
+        {
+            var f = this.TopLevelControl as PhotoMakerForm;
+            f.IntegrationProcessing("RGB", 'G');
+        }
+
+        private void FilterBlueButton_Click(object sender, EventArgs e)
+        {
+            var f = this.TopLevelControl as PhotoMakerForm;
+            f.IntegrationProcessing("RGB", 'B');
         }
     }
 }

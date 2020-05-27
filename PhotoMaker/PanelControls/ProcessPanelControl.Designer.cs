@@ -71,6 +71,7 @@
             this.LightGrayScaleButton.Size = new System.Drawing.Size(145, 35);
             this.LightGrayScaleButton.TabIndex = 6;
             this.LightGrayScaleButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LightGrayScaleButton.Click += new System.EventHandler(this.LightGrayScaleButton_Click);
             // 
             // FilterRedButton
             // 
@@ -96,6 +97,7 @@
             this.FilterRedButton.Size = new System.Drawing.Size(145, 35);
             this.FilterRedButton.TabIndex = 5;
             this.FilterRedButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.FilterRedButton.Click += new System.EventHandler(this.FilterRedButton_Click);
             // 
             // FilterBlueButton
             // 
@@ -121,6 +123,7 @@
             this.FilterBlueButton.Size = new System.Drawing.Size(145, 35);
             this.FilterBlueButton.TabIndex = 4;
             this.FilterBlueButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.FilterBlueButton.Click += new System.EventHandler(this.FilterBlueButton_Click);
             // 
             // FilterGreenButton
             // 
@@ -146,6 +149,7 @@
             this.FilterGreenButton.Size = new System.Drawing.Size(145, 35);
             this.FilterGreenButton.TabIndex = 3;
             this.FilterGreenButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.FilterGreenButton.Click += new System.EventHandler(this.FilterGreenButton_Click);
             // 
             // MeanGrayScaleButton
             // 
@@ -171,6 +175,7 @@
             this.MeanGrayScaleButton.Size = new System.Drawing.Size(145, 35);
             this.MeanGrayScaleButton.TabIndex = 2;
             this.MeanGrayScaleButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.MeanGrayScaleButton.Click += new System.EventHandler(this.MeanGrayScaleButton_Click);
             // 
             // BinarizationButton
             // 
@@ -190,6 +195,7 @@
             this.BinarizationButton.Name = "BinarizationButton";
             this.BinarizationButton.Size = new System.Drawing.Size(145, 145);
             this.BinarizationButton.TabIndex = 1;
+            this.BinarizationButton.Click += new System.EventHandler(this.BinarizationButton_Click);
             // 
             // NegativeButton
             // 
@@ -216,7 +222,7 @@
             // ProcessPanelControl
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.BackColor = System.Drawing.Color.Gray;
             this.Controls.Add(this.LightGrayScaleButton);
             this.Controls.Add(this.FilterRedButton);
             this.Controls.Add(this.FilterBlueButton);

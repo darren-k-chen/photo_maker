@@ -32,7 +32,7 @@
             this.CloseFileButton = new Bunifu.Framework.UI.BunifuTileButton();
             this.OpenFileButton = new Bunifu.Framework.UI.BunifuTileButton();
             this.SaveFileButton = new Bunifu.Framework.UI.BunifuTileButton();
-            this.LanguageChangeButton = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.QuitButton = new Bunifu.Framework.UI.BunifuThinButton2();
             this.SuspendLayout();
             // 
             // CloseFileButton
@@ -41,6 +41,7 @@
             this.CloseFileButton.color = System.Drawing.Color.Transparent;
             this.CloseFileButton.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(170)))), ((int)(((byte)(245)))));
             this.CloseFileButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CloseFileButton.Enabled = false;
             this.CloseFileButton.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CloseFileButton.ForeColor = System.Drawing.Color.White;
             this.CloseFileButton.Image = global::PhotoMaker.Properties.Resources.close_file_white_icon;
@@ -86,6 +87,7 @@
             this.SaveFileButton.color = System.Drawing.Color.Transparent;
             this.SaveFileButton.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(170)))), ((int)(((byte)(245)))));
             this.SaveFileButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SaveFileButton.Enabled = false;
             this.SaveFileButton.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SaveFileButton.ForeColor = System.Drawing.Color.White;
             this.SaveFileButton.Image = global::PhotoMaker.Properties.Resources.save_file_white_icon;
@@ -98,40 +100,41 @@
             this.SaveFileButton.Name = "SaveFileButton";
             this.SaveFileButton.Size = new System.Drawing.Size(145, 145);
             this.SaveFileButton.TabIndex = 0;
+            this.SaveFileButton.Click += new System.EventHandler(this.SaveFileButton_Click);
             this.SaveFileButton.MouseEnter += new System.EventHandler(this.SaveFileButton_MouseEnter);
             this.SaveFileButton.MouseLeave += new System.EventHandler(this.SaveFileButton_MouseLeave);
             // 
-            // LanguageChangeButton
+            // QuitButton
             // 
-            this.LanguageChangeButton.ActiveBorderThickness = 1;
-            this.LanguageChangeButton.ActiveCornerRadius = 20;
-            this.LanguageChangeButton.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(170)))), ((int)(((byte)(245)))));
-            this.LanguageChangeButton.ActiveForecolor = System.Drawing.Color.White;
-            this.LanguageChangeButton.ActiveLineColor = System.Drawing.Color.White;
-            this.LanguageChangeButton.BackColor = System.Drawing.Color.Transparent;
-            this.LanguageChangeButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LanguageChangeButton.BackgroundImage")));
-            this.LanguageChangeButton.ButtonText = "中文";
-            this.LanguageChangeButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.LanguageChangeButton.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LanguageChangeButton.ForeColor = System.Drawing.Color.Red;
-            this.LanguageChangeButton.IdleBorderThickness = 1;
-            this.LanguageChangeButton.IdleCornerRadius = 20;
-            this.LanguageChangeButton.IdleFillColor = System.Drawing.Color.Transparent;
-            this.LanguageChangeButton.IdleForecolor = System.Drawing.Color.White;
-            this.LanguageChangeButton.IdleLineColor = System.Drawing.Color.White;
-            this.LanguageChangeButton.Location = new System.Drawing.Point(5, 483);
-            this.LanguageChangeButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.LanguageChangeButton.Name = "LanguageChangeButton";
-            this.LanguageChangeButton.Size = new System.Drawing.Size(145, 49);
-            this.LanguageChangeButton.TabIndex = 3;
-            this.LanguageChangeButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.LanguageChangeButton.Click += new System.EventHandler(this.QuitButton_Click);
+            this.QuitButton.ActiveBorderThickness = 1;
+            this.QuitButton.ActiveCornerRadius = 20;
+            this.QuitButton.ActiveFillColor = System.Drawing.Color.Red;
+            this.QuitButton.ActiveForecolor = System.Drawing.Color.White;
+            this.QuitButton.ActiveLineColor = System.Drawing.Color.White;
+            this.QuitButton.BackColor = System.Drawing.Color.Transparent;
+            this.QuitButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("QuitButton.BackgroundImage")));
+            this.QuitButton.ButtonText = "QUIT";
+            this.QuitButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.QuitButton.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.QuitButton.ForeColor = System.Drawing.Color.White;
+            this.QuitButton.IdleBorderThickness = 1;
+            this.QuitButton.IdleCornerRadius = 20;
+            this.QuitButton.IdleFillColor = System.Drawing.Color.Transparent;
+            this.QuitButton.IdleForecolor = System.Drawing.Color.White;
+            this.QuitButton.IdleLineColor = System.Drawing.Color.White;
+            this.QuitButton.Location = new System.Drawing.Point(6, 483);
+            this.QuitButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.QuitButton.Name = "QuitButton";
+            this.QuitButton.Size = new System.Drawing.Size(145, 49);
+            this.QuitButton.TabIndex = 3;
+            this.QuitButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.QuitButton.Click += new System.EventHandler(this.QuitButton_Click);
             // 
             // FilePanelControl
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.Transparent;
-            this.Controls.Add(this.LanguageChangeButton);
+            this.BackColor = System.Drawing.Color.Gray;
+            this.Controls.Add(this.QuitButton);
             this.Controls.Add(this.CloseFileButton);
             this.Controls.Add(this.OpenFileButton);
             this.Controls.Add(this.SaveFileButton);
@@ -145,8 +148,8 @@
         #endregion
 
         private Bunifu.Framework.UI.BunifuTileButton SaveFileButton;
-        private Bunifu.Framework.UI.BunifuTileButton OpenFileButton;
         private Bunifu.Framework.UI.BunifuTileButton CloseFileButton;
-        public Bunifu.Framework.UI.BunifuThinButton2 LanguageChangeButton;
+        public Bunifu.Framework.UI.BunifuThinButton2 QuitButton;
+        public Bunifu.Framework.UI.BunifuTileButton OpenFileButton;
     }
 }

@@ -26,14 +26,11 @@
         /// 此為設計工具支援所需的方法 - 請勿使用程式碼編輯器修改
         /// 這個方法的內容。
         /// </summary>
-        private void InitializeComponent()
+        public void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PhotoMakerForm));
             this.panel2 = new System.Windows.Forms.Panel();
-            this.filePanelControl1 = new PhotoMaker.UserControls.FilePanelControl();
-            this.processPanelControl2 = new PhotoMaker.PanelControls.ProcessPanelControl();
-            this.painterPanelControl2 = new PhotoMaker.PanelControls.PainterPanelControl();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.GithubButton = new System.Windows.Forms.Button();
@@ -46,12 +43,18 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.PictureBoxPanel = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.bunifuDragControl2 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.bunifuDragControl3 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.bunifuDragControl4 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.bunifuDragControl5 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+            this.painterPanelControl1 = new PhotoMaker.PanelControls.PainterPanelControl();
+            this.processPanelControl1 = new PhotoMaker.PanelControls.ProcessPanelControl();
+            this.filePanelControl2 = new PhotoMaker.UserControls.FilePanelControl();
+            this.dragControl1 = new PhotoMaker.DragControl();
+            this.dragControl2 = new PhotoMaker.DragControl();
+            this.dragControl3 = new PhotoMaker.DragControl();
+            this.dragControl4 = new PhotoMaker.DragControl();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -63,38 +66,14 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(211)))));
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel2.Controls.Add(this.filePanelControl1);
-            this.panel2.Controls.Add(this.processPanelControl2);
-            this.panel2.Controls.Add(this.painterPanelControl2);
+            this.panel2.Controls.Add(this.painterPanelControl1);
+            this.panel2.Controls.Add(this.processPanelControl1);
+            this.panel2.Controls.Add(this.filePanelControl2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 62);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(157, 538);
             this.panel2.TabIndex = 1;
-            // 
-            // filePanelControl1
-            // 
-            this.filePanelControl1.BackColor = System.Drawing.Color.Transparent;
-            this.filePanelControl1.Location = new System.Drawing.Point(0, 3);
-            this.filePanelControl1.Name = "filePanelControl1";
-            this.filePanelControl1.Size = new System.Drawing.Size(157, 538);
-            this.filePanelControl1.TabIndex = 2;
-            // 
-            // processPanelControl2
-            // 
-            this.processPanelControl2.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.processPanelControl2.Location = new System.Drawing.Point(0, 0);
-            this.processPanelControl2.Name = "processPanelControl2";
-            this.processPanelControl2.Size = new System.Drawing.Size(157, 538);
-            this.processPanelControl2.TabIndex = 1;
-            // 
-            // painterPanelControl2
-            // 
-            this.painterPanelControl2.BackColor = System.Drawing.Color.Gray;
-            this.painterPanelControl2.Location = new System.Drawing.Point(0, 0);
-            this.painterPanelControl2.Name = "painterPanelControl2";
-            this.painterPanelControl2.Size = new System.Drawing.Size(157, 538);
-            this.painterPanelControl2.TabIndex = 0;
             // 
             // panel1
             // 
@@ -150,7 +129,7 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(119, 6);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(256, 29);
+            this.label2.Size = new System.Drawing.Size(203, 23);
             this.label2.TabIndex = 7;
             this.label2.Text = " © | All Rights Reserved";
             this.label2.Click += new System.EventHandler(this.label2_Click_1);
@@ -162,7 +141,7 @@
             this.HideButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.HideButton.Font = new System.Drawing.Font("微軟正黑體", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.HideButton.ForeColor = System.Drawing.Color.White;
-            this.HideButton.Location = new System.Drawing.Point(1043, 0);
+            this.HideButton.Location = new System.Drawing.Point(1042, 0);
             this.HideButton.Name = "HideButton";
             this.HideButton.Size = new System.Drawing.Size(62, 62);
             this.HideButton.TabIndex = 9;
@@ -173,6 +152,7 @@
             // PainterButton
             // 
             this.PainterButton.BackColor = System.Drawing.Color.Transparent;
+            this.PainterButton.Enabled = false;
             this.PainterButton.FlatAppearance.BorderSize = 0;
             this.PainterButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.PainterButton.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -181,7 +161,7 @@
             this.PainterButton.Name = "PainterButton";
             this.PainterButton.Size = new System.Drawing.Size(175, 45);
             this.PainterButton.TabIndex = 5;
-            this.PainterButton.Text = "PAINTER";
+            this.PainterButton.Text = "Clipboard";
             this.PainterButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.PainterButton.UseVisualStyleBackColor = false;
             this.PainterButton.Click += new System.EventHandler(this.PainterButton_Click);
@@ -191,6 +171,7 @@
             // ProcessButton
             // 
             this.ProcessButton.BackColor = System.Drawing.Color.Transparent;
+            this.ProcessButton.Enabled = false;
             this.ProcessButton.FlatAppearance.BorderSize = 0;
             this.ProcessButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ProcessButton.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -258,7 +239,7 @@
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(5, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(184, 41);
+            this.label1.Size = new System.Drawing.Size(149, 35);
             this.label1.TabIndex = 0;
             this.label1.Text = "Photomaker";
             // 
@@ -269,56 +250,87 @@
             this.imageList1.Images.SetKeyName(0, "Github_light_mark_24.png");
             this.imageList1.Images.SetKeyName(1, "Github_mark_24.png");
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // PictureBoxPanel
+            // 
+            this.PictureBoxPanel.BackColor = System.Drawing.Color.Transparent;
+            this.PictureBoxPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PictureBoxPanel.Location = new System.Drawing.Point(157, 62);
+            this.PictureBoxPanel.Name = "PictureBoxPanel";
+            this.PictureBoxPanel.Size = new System.Drawing.Size(1003, 538);
+            this.PictureBoxPanel.TabIndex = 3;
+            this.PictureBoxPanel.Visible = false;
+            // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Location = new System.Drawing.Point(157, 62);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1003, 538);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseDown);
+            this.pictureBox1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseMove);
+            this.pictureBox1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseUp);
             // 
-            // bunifuDragControl1
+            // painterPanelControl1
             // 
-            this.bunifuDragControl1.Fixed = true;
-            this.bunifuDragControl1.Horizontal = true;
-            this.bunifuDragControl1.TargetControl = this.panel1;
-            this.bunifuDragControl1.Vertical = true;
+            this.painterPanelControl1.BackColor = System.Drawing.Color.Transparent;
+            this.painterPanelControl1.Location = new System.Drawing.Point(0, 0);
+            this.painterPanelControl1.Margin = new System.Windows.Forms.Padding(5);
+            this.painterPanelControl1.Name = "painterPanelControl1";
+            this.painterPanelControl1.Size = new System.Drawing.Size(157, 538);
+            this.painterPanelControl1.TabIndex = 3;
+            this.painterPanelControl1.Visible = false;
+            this.painterPanelControl1.Load += new System.EventHandler(this.painterPanelControl1_Load);
             // 
-            // bunifuDragControl2
+            // processPanelControl1
             // 
-            this.bunifuDragControl2.Fixed = true;
-            this.bunifuDragControl2.Horizontal = true;
-            this.bunifuDragControl2.TargetControl = this.panel3;
-            this.bunifuDragControl2.Vertical = true;
+            this.processPanelControl1.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.processPanelControl1.Location = new System.Drawing.Point(0, 0);
+            this.processPanelControl1.Name = "processPanelControl1";
+            this.processPanelControl1.Size = new System.Drawing.Size(157, 538);
+            this.processPanelControl1.TabIndex = 2;
+            this.processPanelControl1.Visible = false;
+            this.processPanelControl1.Load += new System.EventHandler(this.ProcessPanelControl1_Load);
             // 
-            // bunifuDragControl3
+            // filePanelControl2
             // 
-            this.bunifuDragControl3.Fixed = true;
-            this.bunifuDragControl3.Horizontal = true;
-            this.bunifuDragControl3.TargetControl = this.panel4;
-            this.bunifuDragControl3.Vertical = true;
+            this.filePanelControl2.BackColor = System.Drawing.Color.Transparent;
+            this.filePanelControl2.Location = new System.Drawing.Point(0, 3);
+            this.filePanelControl2.Name = "filePanelControl2";
+            this.filePanelControl2.Size = new System.Drawing.Size(157, 538);
+            this.filePanelControl2.TabIndex = 1;
+            this.filePanelControl2.Visible = false;
             // 
-            // bunifuDragControl4
+            // dragControl1
             // 
-            this.bunifuDragControl4.Fixed = true;
-            this.bunifuDragControl4.Horizontal = true;
-            this.bunifuDragControl4.TargetControl = this.label2;
-            this.bunifuDragControl4.Vertical = true;
+            this.dragControl1.SelectControl = this.panel1;
             // 
-            // bunifuDragControl5
+            // dragControl2
             // 
-            this.bunifuDragControl5.Fixed = true;
-            this.bunifuDragControl5.Horizontal = true;
-            this.bunifuDragControl5.TargetControl = this.label1;
-            this.bunifuDragControl5.Vertical = true;
+            this.dragControl2.SelectControl = this.label1;
+            // 
+            // dragControl3
+            // 
+            this.dragControl3.SelectControl = this.label2;
+            // 
+            // dragControl4
+            // 
+            this.dragControl4.SelectControl = this.panel4;
             // 
             // PhotoMakerForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(1160, 600);
+            this.Controls.Add(this.PictureBoxPanel);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -337,7 +349,6 @@
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -350,8 +361,6 @@
         private DragControl dragControl1;
         private DragControl dragControl2;
         private System.Windows.Forms.Button FileButton;
-        private System.Windows.Forms.Button PainterButton;
-        private System.Windows.Forms.Button ProcessButton;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button GithubButton;
         private System.Windows.Forms.Button HideButton;
@@ -359,19 +368,17 @@
         private System.Windows.Forms.ImageList imageList1;
         private DragControl dragControl3;
         private DragControl dragControl4;
-        private UserControls.FilePanelControl filePanelControl2;
         private PanelControls.ProcessPanelControl processPanelControl1;
-        public System.Windows.Forms.PictureBox pictureBox1;
         private PanelControls.PainterPanelControl painterPanelControl1;
         private System.Windows.Forms.Button CloseButton;
-        private PanelControls.PainterPanelControl painterPanelControl2;
-        private UserControls.FilePanelControl filePanelControl1;
-        private PanelControls.ProcessPanelControl processPanelControl2;
-        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
-        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl2;
-        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl3;
-        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl4;
-        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl5;
+        public System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private UserControls.FilePanelControl filePanelControl2;
+        public System.Windows.Forms.PictureBox pictureBox1;
+        public System.Windows.Forms.Panel PictureBoxPanel;
+        private System.Windows.Forms.ColorDialog colorDialog1;
+        public System.Windows.Forms.Button PainterButton;
+        public System.Windows.Forms.Button ProcessButton;
     }
 }
 

@@ -25,13 +25,14 @@ namespace PhotoMaker.UserControls
             OpenFileButton.BackColor = Color.Transparent;
             SaveFileButton.BackColor = Color.Transparent;
             CloseFileButton.BackColor = Color.Transparent;
-            LanguageChangeButton.ForeColor = Color.White;
+            QuitButton.ForeColor = Color.White;
         }
 
         private void FilePanelControl_Load(object sender, EventArgs e)
         {
 
         }
+
 
         private void OpenFileButton_MouseEnter(object sender, EventArgs e)
         {
@@ -55,7 +56,12 @@ namespace PhotoMaker.UserControls
 
         private void CloseFileButton_Click(object sender, EventArgs e)
         {
-
+            var f = this.TopLevelControl as PhotoMakerForm;
+            f.DeleteFile();
+            SaveFileButton.Enabled = false;
+            CloseFileButton.Enabled = false;
+            f.ProcessButton.Enabled = false;
+            f.PainterButton.Enabled = false;
         }
 
         private void CloseFileButton_MouseEnter(object sender, EventArgs e)
@@ -68,16 +74,28 @@ namespace PhotoMaker.UserControls
             CloseFileButton.BackColor = Color.Transparent;
         }
 
-        private void OpenFileButton_Click(object sender, EventArgs e)
+        public void OpenFileButton_Click(object sender, EventArgs e)
         {
-
+            var f = this.TopLevelControl as PhotoMakerForm;
+            if(f.OpenFile())
+            {
+                SaveFileButton.Enabled = true;
+                CloseFileButton.Enabled = true;
+                f.ProcessButton.Enabled = true;
+                f.PainterButton.Enabled = true;
+            }
         }
 
         private void QuitButton_Click(object sender, EventArgs e)
         {
-            //PhotoMakerForm obj = new PhotoMakerForm();
-            //obj.Close();
-            //obj.CloseButton_Click(sender, e);
+            var f = this.TopLevelControl as PhotoMakerForm;
+            f.Close();
+        }
+
+        private void SaveFileButton_Click(object sender, EventArgs e)
+        {
+            var f = this.TopLevelControl as PhotoMakerForm;
+            f.SaveFile();
         }
     }
 }
